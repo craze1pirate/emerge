@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerge 2k25 | National Level Technical Symposium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #f0f0f0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        .gold-text {
+            color: #D4AF37;
+        }
+        .red-text {
+            color: #EF4444; /* Tailwind red-500 */
+        }
+        .gold-border {
+            border-color: #D4AF37;
+        }
+        .bg-gold {
+            background-color: #D4AF37;
+        }
+        .bg-red-custom {
+            background-color: #EF4444;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('https://i.postimg.cc/fWPy8GX8/Picsart-25-08-15-23-19-44-266.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-bg {
+            background-color: #0a0a0a;
+        }
+        .event-card {
+            background-color: #111111;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .event-card:hover {
+            transform: translateY(-10px);
+            border-color: #D4AF37;
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.15);
+        }
+        /* Modal Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+        }
+        .modal-content {
+            background-color: #111;
+            margin: 5% auto;
+            padding: 2rem;
+            border: 1px solid #D4AF37;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 10px;
+            animation: fadeIn 0.5s;
+        }
+        .modal-body ul {
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+        .modal-body li {
+            margin-bottom: 0.5rem;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: scale(0.95);}
+            to {opacity: 1; transform: scale(1);}
+        }
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: #D4AF37;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-50 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-oswald gold-text tracking-wider">EMERGE 2K25</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-300 hover:gold-text transition duration-300">About</a>
+                <a href="#events" class="text-gray-300 hover:gold-text transition duration-300">Events</a>
+                <a href="#register" class="text-gray-300 hover:gold-text transition duration-300">Register</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90">
+            <a href="#about" class="block text-center py-3 text-gray-300 hover:bg-gold hover:text-black transition duration-300">About</a>
+            <a href="#events" class="block text-center py-3 text-gray-300 hover:bg-gold hover:text-black transition duration-300">Events</a>
+            <a href="#register" class="block text-center py-3 text-gray-300 hover:bg-gold hover:text-black transition duration-300">Register</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex flex-col justify-center items-center text-center pt-20">
+        <div class="container mx-auto px-6">
+            <!-- Symposium Logo -->
+            <img src="https://i.postimg.cc/kXpnJKww/Picsart-25-08-16-00-07-59-739.png" alt="Emerge 2k25 Logo" class="mx-auto mb-8 w-48 md:w-64" onerror="this.onerror=null;this.src='https://placehold.co/256x256/000000/FFFFFF?text=Logo';">
+
+            <h2 class="text-lg md:text-xl text-gray-300 tracking-widest">SRM VALIAMMAI ENGINEERING COLLEGE PRESENTS</h2>
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-oswald gold-text uppercase tracking-widest" style="text-shadow: 3px 3px 8px rgba(0,0,0,0.7);">Emerge 2k25</h1>
+            <p class="text-xl md:text-3xl text-gray-200 mt-4 mb-8 max-w-3xl mx-auto">A National Level Technical Symposium</p>
+             <p class="text-2xl md:text-4xl gold-text mt-12 font-bold font-oswald tracking-wider">September 20, 2025</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 section-bg">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-oswald gold-text uppercase tracking-wider mb-6">About Emerge 2k25</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-8"></div>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Emerge 2k25 is a premier national-level technical symposium organized by the Department of Electrical and Electronics Engineering. It serves as a dynamic platform for students to showcase their technical prowess, innovative ideas, and competitive spirit. Join us for a day of challenging events, insightful presentations, and unparalleled learning opportunities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-oswald gold-text uppercase tracking-wider text-center mb-6">Technical Events</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Event Card: Paper Presentation -->
+                <div class="event-card rounded-lg p-8 text-center flex flex-col items-center">
+                    <div class="text-5xl gold-text mb-4"><i class="fas fa-file-powerpoint"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">Paper Presentation</h3>
+                    <p class="text-gray-400 mb-6 flex-grow">Present your findings, engage in scholarly discussions, and contribute to academic discourse.</p>
+                    <button class="event-button mt-auto bg-transparent gold-border border-2 text-gold py-2 px-6 rounded-full hover:bg-gold hover:text-black transition duration-300" data-modal="paperPresentationModal">View Details</button>
+                </div>
+
+                <!-- Event Card: Project Expo -->
+                <div class="event-card rounded-lg p-8 text-center flex flex-col items-center">
+                    <div class="text-5xl gold-text mb-4"><i class="fas fa-microchip"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">Project Expo</h3>
+                    <p class="text-gray-400 mb-6 flex-grow">Showcase your innovative projects, demonstrate their functionality, and receive valuable feedback.</p>
+                    <button class="event-button mt-auto bg-transparent gold-border border-2 text-gold py-2 px-6 rounded-full hover:bg-gold hover:text-black transition duration-300" data-modal="projectExpoModal">View Details</button>
+                </div>
+
+                <!-- Event Card: Circuitrix -->
+                <div class="event-card rounded-lg p-8 text-center flex flex-col items-center">
+                    <div class="text-5xl gold-text mb-4"><i class="fas fa-bolt"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">Circuitrix</h3>
+                    <p class="text-gray-400 mb-6 flex-grow">Put your EEE skills to the ultimate test in a series of fast-paced, hands-on challenges.</p>
+                    <button class="event-button mt-auto bg-transparent gold-border border-2 text-gold py-2 px-6 rounded-full hover:bg-gold hover:text-black transition duration-300" data-modal="circuitrixModal">View Details</button>
+                </div>
+
+                <!-- Event Card: Quizzical -->
+                <div class="event-card rounded-lg p-8 text-center flex flex-col items-center">
+                    <div class="text-5xl gold-text mb-4"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">Quizzical</h3>
+                    <p class="text-gray-400 mb-6 flex-grow">Spark your mind and test your technical instincts in a high-voltage quiz competition.</p>
+                    <button class="event-button mt-auto bg-transparent gold-border border-2 text-gold py-2 px-6 rounded-full hover:bg-gold hover:text-black transition duration-300" data-modal="quizzicalModal">View Details</button>
+                </div>
+
+                <!-- Event Card: Treasure Hunt -->
+                <div class="event-card rounded-lg p-8 text-center flex flex-col items-center">
+                    <div class="text-5xl gold-text mb-4"><i class="fas fa-map-signs"></i></div>
+                    <h3 class="text-2xl font-bold mb-2">Treasure Hunt</h3>
+                    <p class="text-gray-400 mb-6 flex-grow">Decipher clues, solve circuit mysteries, and race for the ultimate prize in this thrilling hunt.</p>
+                    <button class="event-button mt-auto bg-transparent gold-border border-2 text-gold py-2 px-6 rounded-full hover:bg-gold hover:text-black transition duration-300" data-modal="treasureHuntModal">View Details</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-20 section-bg">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-oswald gold-text uppercase tracking-wider mb-4">Ready to Compete?</h2>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">Secure your spot in the symposium. Register now and get ready to emerge victorious!</p>
+            <a href="#" class="bg-red-custom text-white font-bold text-xl py-4 px-10 rounded-full hover:bg-red-700 transition duration-300 transform hover:scale-105">REGISTER NOW</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <h2 class="text-3xl font-oswald gold-text uppercase tracking-wider mb-4">Emerge 2k25</h2>
+            <p class="mb-4">Department of Electrical and Electronics Engineering</p>
+            <p class="mb-6">For queries, contact: <a href="mailto:emergepaperpresentation2k25@gmail.com" class="hover:gold-text">emergepaperpresentation2k25@gmail.com</a></p>
+            <p>&copy; 2025 SRM Valliammai Engineering College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals for Event Details -->
+
+    <!-- Paper Presentation Modal -->
+    <div id="paperPresentationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <h2 class="text-3xl font-oswald gold-text mb-4">Paper Presentation</h2>
+                <p class="text-gray-300 mb-6">The Paper Presentation Event is a platform for curious minds to explore and share the latest research and innovations. It's a premier opportunity to present your findings, engage in scholarly discussions with peers and faculty, and gain new perspectives.</p>
+                <h3 class="text-xl font-bold red-text mb-2">Event Guidelines</h3>
+                <ul class="text-gray-400 list-disc mb-6">
+                    <li><strong class="text-gray-200">Round 1: Abstract Submission</strong> - Participants must submit their abstract and student details as a single PDF to the specified email address.</li>
+                    <li><strong class="text-gray-200">Round 2: Physical Presentation</strong> - Selected students must present their paper in person on September 20, 2025.</li>
+                </ul>
+                <h3 class="text-xl font-bold red-text mb-2">Rules</h3>
+                <ul class="text-gray-400 list-disc">
+                    <li>Participation can be solo or in a team of up to three members.</li>
+                    <li>Papers should focus on topics related to EEE (e.g., IoT, Embedded Systems).</li>
+                    <li>Each team member must register individually.</li>
+                    <li>Presentation must be in MS-PowerPoint (16:9 layout, PPT format).</li>
+                    <li>Abstracts must not exceed 150 words (Times New Roman, Headings 14, Content 12).</li>
+                    <li>Presentation must not exceed 15 slides.</li>
+                    <li>Submission deadline for abstract is <strong class="gold-text">September 20, 2025</strong>. Email to: <strong class="gold-text">emergepaperpresentation2k25@gmail.com</strong>.</li>
+                    <li>Maximum presentation time is 10 minutes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Expo Modal -->
+    <div id="projectExpoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <h2 class="text-3xl font-oswald gold-text mb-4">Project Expo</h2>
+                <p class="text-gray-300 mb-6">The Project Expo is a platform for students to showcase their innovative projects and technical skills. This event fosters creativity and practical application of knowledge, providing a space for you to share your passion and receive valuable feedback.</p>
+                <h3 class="text-xl font-bold red-text mb-2">Event Guidelines</h3>
+                <ul class="text-gray-400 list-disc mb-6">
+                    <li><strong class="text-gray-200">Round 1: Abstract Submission</strong> - Send abstract, prototype photo, and student details as a PDF through the Google form.</li>
+                    <li><strong class="text-gray-200">Round 2: Demonstration & Presentation</strong> - Selected students must present their project in person on September 20, 2025.</li>
+                </ul>
+                <h3 class="text-xl font-bold red-text mb-2">Rules</h3>
+                <ul class="text-gray-400 list-disc">
+                    <li>Individual or team of maximum four members.</li>
+                    <li>Project can be based on topics related to EEE and Emerging Topics.</li>
+                    <li>Individual registration required for all team members.</li>
+                    <li>Abstract should not exceed 150 words.</li>
+                    <li>Time slot: 10 mins presentation followed by a 5 mins Q&A session.</li>
+                    <li>Teams are responsible for bringing all necessary equipment.</li>
+                    <li>Participants <strong class="gold-text">must</strong> bring their prototype.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Circuitrix Modal -->
+    <div id="circuitrixModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <h2 class="text-3xl font-oswald gold-text mb-4">Circuitrix</h2>
+                <p class="text-gray-300 mb-6">Circuitrix is a dynamic event designed to put your electrical and electronics engineering skills to the ultimate test. Engage in a series of fast-paced challenges that will assess your technical knowledge, quick thinking, and ability to collaborate under pressure.</p>
+                <h3 class="text-xl font-bold red-text mb-2">Event Guidelines</h3>
+                <ul class="text-gray-400 list-disc mb-6">
+                    <li><strong class="text-gray-200">Round 1: Bingo</strong> - Players mark electrical symbols on a pamphlet. First to get five in a line wins.</li>
+                    <li><strong class="text-gray-200">Round 2: Transmitter and Receiver</strong> - Teams of three communicate answers through acting, talking, or drawing.</li>
+                    <li><strong class="text-gray-200">Round 3: Simulation</strong> - One member memorizes a circuit, then explains it to teammates who must recreate it.</li>
+                </ul>
+                <h3 class="text-xl font-bold red-text mb-2">Rules</h3>
+                <ul class="text-gray-400 list-disc">
+                    <li>Participation is open to teams of up to three members.</li>
+                    <li>All decisions made by the judges are final and binding.</li>
+                    <li>Any form of cheating will result in immediate disqualification.</li>
+                    <li>Participants must adhere to the time limits specified for each round.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quizzical Modal -->
+    <div id="quizzicalModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <h2 class="text-3xl font-oswald gold-text mb-4">Quizzical</h2>
+                <p class="text-gray-300 mb-6">Step into the electrifying world of Quizzical, an event designed to spark your mind and test your technical instincts. Packed with puzzles, visuals, and lightning-fast thinking, this contest blends knowledge, wit, and quick reflexes.</p>
+                <h3 class="text-xl font-bold red-text mb-2">Event Guidelines</h3>
+                <ul class="text-gray-400 list-disc mb-6">
+                    <li><strong class="text-gray-200">Round 1: Pictricity</strong> - Decode images representing components, topics, or personalities.</li>
+                    <li><strong class="text-gray-200">Round 2: Tech Charades</strong> - One teammate acts out a technical term for the others to guess.</li>
+                    <li><strong class="text-gray-200">Round 3: Rapid Relay</strong> - A lightning-fast, rapid-fire buzzer round.</li>
+                </ul>
+                <h3 class="text-xl font-bold red-text mb-2">Rules</h3>
+                <ul class="text-gray-400 list-disc">
+                    <li>Open to teams of up to three members.</li>
+                    <li>The decision of the quizmaster is final.</li>
+                    <li>Use of mobile phones or cheating will result in disqualification.</li>
+                    <li>Teams must be on time for all rounds.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Treasure Hunt Modal -->
+    <div id="treasureHuntModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <h2 class="text-3xl font-oswald gold-text mb-4">Treasure Hunt</h2>
+                <p class="text-gray-300 mb-6">Get ready for an electrifying adventure! This high-voltage treasure hunt is designed for the sharpest minds in EEE. Form a team of three and embark on a circuitous quest to test your technical knowledge, quick thinking, and collaborative skills.</p>
+                <h3 class="text-xl font-bold red-text mb-2">Event Guidelines</h3>
+                <ul class="text-gray-400 list-disc mb-6">
+                    <li><strong class="text-gray-200">Round 1: Current Affairs (MCQ Quiz)</strong> - A quiz based on concepts from electrical and electronic circuits.</li>
+                    <li><strong class="text-gray-200">Round 2: Watt Did You Say?</strong> - A lip-reading and gesture-based guessing game.</li>
+                    <li><strong class="text-gray-200">Round 3: Missing Phase Mystery</strong> - Teams solve a circuit puzzle with a missing component.</li>
+                </ul>
+                <h3 class="text-xl font-bold red-text mb-2">Rules</h3>
+                <ul class="text-gray-400 list-disc">
+                    <li>Each team must consist of three members.</li>
+                    <li>The final decision is at the discretion of the event organizers.</li>
+                    <li>Cheating or unsportsmanlike conduct will result in disqualification.</li>
+                    <li>All team members must be present and work together.</li>
+                    <li>No mobile phones or electronic gadgets allowed.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                mobileMenu.classList.add('hidden'); // Close mobile menu on link click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Modal Logic
+        const eventButtons = document.querySelectorAll('.event-button');
+        const modals = document.querySelectorAll('.modal');
+        const closeButtons = document.querySelectorAll('.close-button');
+
+        eventButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.getAttribute('data-modal');
+                document.getElementById(modalId).style.display = 'block';
+            });
+        });
+
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.closest('.modal').style.display = 'none';
+            });
+        });
+
+        window.addEventListener('click', (event) => {
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>
