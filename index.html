@@ -230,7 +230,7 @@
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-5xl font-oswald gold-text uppercase tracking-wider mb-4">Ready to Compete?</h2>
             <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">Secure your spot in the symposium. Register now and get ready to emerge victorious!</p>
-            <a href="#" class="inline-block bg-red-custom text-white font-bold text-xl py-4 px-10 rounded-full hover:bg-red-700 transition duration-300 transform hover:scale-105">REGISTER NOW</a>
+            <a href="https://forms.gle/7UeZ3vC69EpnS9fc7" target="_blank" class="inline-block bg-red-custom text-white font-bold text-xl py-4 px-10 rounded-full hover:bg-red-700 transition duration-300 transform hover:scale-105">REGISTER NOW</a>
         
             <div class="mt-16 text-gray-300 max-w-4xl mx-auto text-left">
                 <h3 class="text-2xl font-oswald red-text font-bold mb-4">About College:</h3>
@@ -254,41 +254,72 @@
 
     <!-- Footer -->
     <footer id="contact" class="bg-black py-10">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-10">
+        <div class="container mx-auto px-6 text-gray-400">
+            <!-- Updated contact grid -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-left mb-10">
+                <!-- Convener -->
+                <div>
+                    <h3 class="text-xl font-bold red-text mb-4">Convener</h3>
+                    <p class="mb-2"><strong class="font-semibold text-gray-200">Dr. M. Murugan</strong><br>Principal</p>
+                    <p><strong class="font-semibold text-gray-200">Dr. K. Elango</strong><br>Professor & Head</p>
+                </div>
+
                 <!-- Staff Coordinators -->
                 <div>
                     <h3 class="text-xl font-bold red-text mb-4">Staff Coordinators</h3>
-                    <p class="mb-2"><strong class="font-semibold text-gray-200">Dr. G. Madhusudhanan</strong><br>Professor & HOD<br>Department of EEE</p>
-                    <p><strong class="font-semibold text-gray-200">Mrs. R.V. Preetha</strong><br>Assistant Professor<br>Department of EEE</p>
+                    <p class="mb-2"><strong class="font-semibold text-gray-200">Dr. G. Madhusudhanan</strong><br>Professor, EEE<p>
+                    <p><strong class="font-semibold text-gray-200">Mrs. R.V. Preetha</strong><br>Assistant Professor, EEE<p>
                 </div>
                 
-                <!-- Event Incharge -->
-                <div>
-                    <h3 class="text-xl font-bold red-text mb-4">Event Incharge</h3>
-                    <p class="mb-2"><strong class="font-semibold text-gray-200">President:</strong> Vignesh V<br>
-                        <a href="tel:7397294194" class="hover:gold-text"><i class="fas fa-phone mr-2"></i>7397294194</a>
-                    </p>
-                    <p class="mb-2"><strong class="font-semibold text-gray-200">Vice President:</strong> Sona J<br>
-                        <a href="tel:9363339276" class="hover:gold-text"><i class="fas fa-phone mr-2"></i>9363339276</a>
-                    </p>
-                    <p><strong class="font-semibold text-gray-200">Secretary:</strong> Aakash S<br>
-                        <a href="tel:9360075276" class="hover:gold-text"><i class="fas fa-phone mr-2"></i>9360075276</a>
-                    </p>
-                </div>
-
-                <!-- Social and General Contact -->
-                <div>
-                    <h3 class="text-xl font-bold red-text mb-4">Connect With Us</h3>
-                    <a href="https://www.instagram.com/srmvec_.emerge/" target="_blank" class="inline-flex items-center text-lg hover:gold-text transition duration-300 mb-4">
-                        <i class="fab fa-instagram text-2xl mr-3"></i> Follow on Instagram
-                    </a>
-                    <p class="mb-2"><strong class="font-semibold text-gray-200">General Queries:</strong></p>
-                    <a href="mailto:emergepaperpresentation2k25@gmail.com" class="hover:gold-text break-all"><i class="fas fa-envelope mr-2"></i>emergepaperpresentation2k25@gmail.com</a>
+                <!-- Student Coordinators (Now spans 2 columns on medium screens and up) -->
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold red-text mb-4">Student Coordinators</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6">
+                        <!-- Column 1 for President and Vice President -->
+                        <div>
+                            <p class="mb-4">
+                                <strong class="font-semibold text-gray-200">President:</strong> Vignesh V<br>
+                                <a href="tel:7397294194" class="hover:gold-text"><i class="fas fa-phone mr-2"></i>7397294194</a>
+                            </p>
+                            <p class="mb-4">
+                                <strong class="font-semibold text-gray-200">Vice President:</strong> Sona J<br>
+                                <a href="tel:9363339276" class="hover:gold-text"><i class="fas fa-phone mr-2"></i>9363339276</a>
+                            </p>
+                        </div>
+                        <!-- Column 2 for Secretary and Treasurer -->
+                        <div>
+                            <p class="mb-4">
+                                <strong class="font-semibold text-gray-200">Secretary:</strong> Aakash S<br>
+                                <a href="tel:9360075276" class="hover:gold-text"><i class="fas fa-phone mr-2"></i>9360075276</a>
+                            </p>
+                            <p class="mb-4">
+                                <strong class="font-semibold text-gray-200">Treasurer:</strong> Tharun Karthik K<br>
+                                <a href="tel:9884900687" class="hover:gold-text"><i class="fas fa-phone mr-2"></i>9884900687</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 pt-8">
+            <!-- Social and General Contact -->
+            <div class="flex flex-col md:flex-row justify-between items-start w-full mt-10">
+                <!-- Connect With Us -->
+                <div class="text-center md:text-left w-full md:w-auto mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold red-text mb-4">Connect With Us</h3>
+                    <a href="https://www.instagram.com/srmvec_.emerge/" target="_blank" class="inline-flex items-center text-lg hover:gold-text transition duration-300">
+                        <i class="fab fa-instagram text-2xl mr-3"></i> Follow on Instagram
+                    </a>
+                </div>
+                <!-- General Queries -->
+                <div class="text-center md:text-left w-full md:w-auto">
+                    <h3 class="text-xl font-bold text-white mb-4">General Queries</h3>
+                    <a href="mailto:srmvecemerge.eee@gmail.com" class="hover:gold-text break-all inline-flex items-center">
+                        <i class="fas fa-envelope mr-2"></i>srmvecemerge.eee@gmail.com
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 mt-10 text-center">
                 <h2 class="text-3xl font-oswald gold-text uppercase tracking-wider mb-2">Emerge 2k25</h2>
                 <p class="mb-4">Department of Electrical and Electronics Engineering</p>
                 <p>&copy; 2025 SRM Valliammai Engineering College. All Rights Reserved.</p>
@@ -318,7 +349,7 @@
                     <li>Presentation must be in MS-PowerPoint (16:9 layout, PPT format).</li>
                     <li>Abstracts must not exceed 150 words (Times New Roman, Headings 14, Content 12).</li>
                     <li>Presentation must not exceed 15 slides.</li>
-                    <li>Submission deadline for abstract is <strong class="gold-text">September 10, 2025</strong>.</li>
+                    <li>Submission deadline for abstract is <strong class="gold-text">September 12, 2025</strong>.</li>
                     <li>Maximum presentation time is 10 minutes.</li>
                 </ul>
             </div>
@@ -346,6 +377,7 @@
                     <li>Time slot: 10 mins presentation followed by a 5 mins Q&A session.</li>
                     <li>Teams are responsible for bringing all necessary equipment.</li>
                     <li>Participants <strong class="gold-text">must</strong> bring their prototype.</li>
+                    <li>Submission deadline for abstract is <strong class="gold-text">September 12, 2025</strong>.</li>
                 </ul>
             </div>
         </div>
