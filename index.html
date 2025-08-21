@@ -111,6 +111,7 @@
                 <a href="#about" class="text-gray-300 hover:gold-text transition duration-300">About</a>
                 <a href="#events" class="text-gray-300 hover:gold-text transition duration-300">Events</a>
                 <a href="#register" class="text-gray-300 hover:gold-text transition duration-300">Register</a>
+                <a href="#contact" class="text-gray-300 hover:gold-text transition duration-300">Contact</a>
             </nav>
             <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
@@ -121,14 +122,37 @@
             <a href="#about" class="block text-center py-3 text-gray-300 hover:bg-gold hover:text-black transition duration-300">About</a>
             <a href="#events" class="block text-center py-3 text-gray-300 hover:bg-gold hover:text-black transition duration-300">Events</a>
             <a href="#register" class="block text-center py-3 text-gray-300 hover:bg-gold hover:text-black transition duration-300">Register</a>
+            <a href="#contact" class="block text-center py-3 text-gray-300 hover:bg-gold hover:text-black transition duration-300">Contact</a>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-bg min-h-screen flex flex-col justify-center items-center text-center pt-20">
         <div class="container mx-auto px-6">
+            <!-- Countdown Timer -->
+            <div id="countdown" class="text-center mb-8">
+                <div class="flex justify-center space-x-4 md:space-x-8">
+                    <div>
+                        <span id="days" class="text-4xl md:text-6xl font-oswald gold-text">00</span>
+                        <p class="text-sm text-gray-300">Days</p>
+                    </div>
+                    <div>
+                        <span id="hours" class="text-4xl md:text-6xl font-oswald gold-text">00</span>
+                        <p class="text-sm text-gray-300">Hours</p>
+                    </div>
+                    <div>
+                        <span id="minutes" class="text-4xl md:text-6xl font-oswald gold-text">00</span>
+                        <p class="text-sm text-gray-300">Minutes</p>
+                    </div>
+                    <div>
+                        <span id="seconds" class="text-4xl md:text-6xl font-oswald gold-text">00</span>
+                        <p class="text-sm text-gray-300">Seconds</p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Symposium Logo -->
-            <img src="https://i.postimg.cc/QN2HDkkc/Picsart-25-08-17-21-38-01-689.png" alt="Emerge 2k25 Logo" class="mx-auto mb-8 w-48 md:w-64" onerror="this.onerror=null;this.src='https://placehold.co/256x256/000000/FFFFFF?text=Logo';">
+            <img src="https://i.postimg.cc/QN2HDkkc/Picsart-25-08-17-21-38-01-689.png" alt="Emerge 2k25 Logo" class="mx-auto mb-8 w-56 md:w-72" onerror="this.onerror=null;this.src='https://placehold.co/288x288/000000/FFFFFF?text=Logo';">
 
             <h2 class="text-lg md:text-xl text-gray-300 tracking-widest">SRM VALIAMMAI ENGINEERING COLLEGE PRESENTS</h2>
             <h1 class="text-6xl md:text-8xl lg:text-9xl font-oswald gold-text uppercase tracking-widest" style="text-shadow: 3px 3px 8px rgba(0,0,0,0.7);">Emerge 2k25</h1>
@@ -206,21 +230,73 @@
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-5xl font-oswald gold-text uppercase tracking-wider mb-4">Ready to Compete?</h2>
             <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">Secure your spot in the symposium. Register now and get ready to emerge victorious!</p>
-            <a href="#" class="bg-red-custom text-white font-bold text-xl py-4 px-10 rounded-full hover:bg-red-700 transition duration-300 transform hover:scale-105">REGISTER NOW</a>
+            <a href="#" class="inline-block bg-red-custom text-white font-bold text-xl py-4 px-10 rounded-full hover:bg-red-700 transition duration-300 transform hover:scale-105">REGISTER NOW</a>
+        
+            <div class="mt-16 text-gray-300 max-w-4xl mx-auto text-left">
+                <h3 class="text-2xl font-oswald red-text font-bold mb-4">About College:</h3>
+                <p class="text-gray-400 leading-relaxed mb-4">
+                    SRM Valliammai Engineering College, established in 1999, is a part of the prestigious SRM Group of Institutions. Located in Kattankulathur, Tamil Nadu, the college offers a wide range of undergraduate and postgraduate programs in engineering, technology, and management. Accredited by NAAC and approved by AICTE, SRM Valliammai Engineering College is dedicated to producing competent professionals equipped to meet the challenges of the evolving global industry.
+                </p>
+                <a href="https://www.srmvalliammai.ac.in/" target="_blank" class="inline-block gold-text hover:underline transition duration-300 mb-8 font-semibold">Click to know more &rarr;</a>
+                
+                <h3 class="text-2xl font-oswald gold-text mb-4 text-center mt-8">Our Location</h3>
+                <div class="w-full max-w-3xl mx-auto border-2 border-gold rounded-lg overflow-hidden shadow-lg shadow-gold/10">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.268021768405!2d80.03873251128111!3d12.825949418001349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f70d79722631%3A0x49afcd4648f94894!2sSRM%20Valliammai%20Engineering%20College!5e0!3m2!1sen!2sin!4v1755776666210!5m2!1sen!2sin" class="w-full" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="text-center mt-6">
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=SRM+Valliammai+Engineering+College" target="_blank" class="inline-block bg-transparent gold-border border-2 text-gold font-bold py-3 px-8 rounded-full hover:bg-gold hover:text-black transition duration-300">
+                        <i class="fas fa-directions mr-2"></i> Get Directions
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black py-10">
+    <footer id="contact" class="bg-black py-10">
         <div class="container mx-auto px-6 text-center text-gray-400">
-            <h2 class="text-3xl font-oswald gold-text uppercase tracking-wider mb-4">Emerge 2k25</h2>
-            <p class="mb-4">Department of Electrical and Electronics Engineering</p>
-            <p class="mb-6">For queries, contact: <a href="mailto:emergepaperpresentation2k25@gmail.com" class="hover:gold-text">emergepaperpresentation2k25@gmail.com</a></p>
-            <p>&copy; 2025 SRM Valliammai Engineering College. All Rights Reserved.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-10">
+                <!-- Staff Coordinators -->
+                <div>
+                    <h3 class="text-xl font-bold red-text mb-4">Staff Coordinators</h3>
+                    <p class="mb-2"><strong class="font-semibold text-gray-200">Dr. G. Madhusudhanan</strong><br>Professor & HOD<br>Department of EEE</p>
+                    <p><strong class="font-semibold text-gray-200">Mrs. R.V. Preetha</strong><br>Assistant Professor<br>Department of EEE</p>
+                </div>
+                
+                <!-- Event Incharge -->
+                <div>
+                    <h3 class="text-xl font-bold red-text mb-4">Event Incharge</h3>
+                    <p class="mb-2"><strong class="font-semibold text-gray-200">President:</strong> Vignesh V<br>
+                        <a href="tel:7397294194" class="hover:gold-text"><i class="fas fa-phone mr-2"></i>7397294194</a>
+                    </p>
+                    <p class="mb-2"><strong class="font-semibold text-gray-200">Vice President:</strong> Sona J<br>
+                        <a href="tel:9363339276" class="hover:gold-text"><i class="fas fa-phone mr-2"></i>9363339276</a>
+                    </p>
+                    <p><strong class="font-semibold text-gray-200">Secretary:</strong> Aakash S<br>
+                        <a href="tel:9360075276" class="hover:gold-text"><i class="fas fa-phone mr-2"></i>9360075276</a>
+                    </p>
+                </div>
+
+                <!-- Social and General Contact -->
+                <div>
+                    <h3 class="text-xl font-bold red-text mb-4">Connect With Us</h3>
+                    <a href="https://www.instagram.com/srmvec_.emerge/" target="_blank" class="inline-flex items-center text-lg hover:gold-text transition duration-300 mb-4">
+                        <i class="fab fa-instagram text-2xl mr-3"></i> Follow on Instagram
+                    </a>
+                    <p class="mb-2"><strong class="font-semibold text-gray-200">General Queries:</strong></p>
+                    <a href="mailto:emergepaperpresentation2k25@gmail.com" class="hover:gold-text break-all"><i class="fas fa-envelope mr-2"></i>emergepaperpresentation2k25@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <h2 class="text-3xl font-oswald gold-text uppercase tracking-wider mb-2">Emerge 2k25</h2>
+                <p class="mb-4">Department of Electrical and Electronics Engineering</p>
+                <p>&copy; 2025 SRM Valliammai Engineering College. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Modals for Event Details -->
+    <!-- Modals for Event Details (Content remains the same) -->
 
     <!-- Paper Presentation Modal -->
     <div id="paperPresentationModal" class="modal">
@@ -242,7 +318,7 @@
                     <li>Presentation must be in MS-PowerPoint (16:9 layout, PPT format).</li>
                     <li>Abstracts must not exceed 150 words (Times New Roman, Headings 14, Content 12).</li>
                     <li>Presentation must not exceed 15 slides.</li>
-                    <li>Submission deadline for abstract is <strong class="gold-text">September 20, 2025</strong>.</li>
+                    <li>Submission deadline for abstract is <strong class="gold-text">September 10, 2025</strong>.</li>
                     <li>Maximum presentation time is 10 minutes.</li>
                 </ul>
             </div>
@@ -350,6 +426,29 @@
 
 
     <script>
+        // Countdown Timer Logic
+        const countDownDate = new Date("Sep 20, 2025 00:00:00").getTime();
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days < 10 ? '0' + days : days;
+            document.getElementById("hours").innerText = hours < 10 ? '0' + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? '0' + seconds : seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "<div class='text-4xl font-oswald gold-text'>The Event is Here!</div>";
+            }
+        }, 1000);
+
+
         // Mobile Menu Toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -361,7 +460,9 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                mobileMenu.classList.add('hidden'); // Close mobile menu on link click
+                if(mobileMenu.classList.contains('hidden') === false) {
+                   mobileMenu.classList.add('hidden'); // Close mobile menu on link click
+                }
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
